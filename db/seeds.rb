@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+5.times do 
+  book = Book.create(author: Faker::Book.author, title: Faker::Book.title)
+  puts book;
+end
