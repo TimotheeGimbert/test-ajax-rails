@@ -6,7 +6,7 @@
 </ul>
 
 <div class="form">
-  <%= form_tag(books_path, method: :post, class: "form") do %>
+  <%= form_tag(books_path, method: :post, class: "form", remote: true) do %>
     <label for="title">Title
     <%= text_field_tag  :title %>
 
